@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/danilo/Github/Projeto_Web-Lh_Pets_Alunos/Projeto_Web-Lh_Pets_Alunos.csproj": {}
+  },
+  "projects": {
+    "/Users/danilo/Github/Projeto_Web-Lh_Pets_Alunos/Projeto_Web-Lh_Pets_Alunos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/danilo/Github/Projeto_Web-Lh_Pets_Alunos/Projeto_Web-Lh_Pets_Alunos.csproj",
+        "projectName": "Projeto_Web-Lh_Pets_Alunos",
+        "projectPath": "/Users/danilo/Github/Projeto_Web-Lh_Pets_Alunos/Projeto_Web-Lh_Pets_Alunos.csproj",
+        "packagesPath": "/Users/danilo/.nuget/packages/",
+        "outputPath": "/Users/danilo/Github/Projeto_Web-Lh_Pets_Alunos/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/danilo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

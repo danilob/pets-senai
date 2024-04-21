@@ -1,0 +1,40 @@
+version: '3'
+services:
+  
+  mssql:
+    container_name: sql_server
+    hostname: mssql
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=MyPETS#001
+      - MSSQL_DB=PETS
+      - MSSQL_USER=SA
+      - MSQL_PID=Express
+      - MSSQL_PASSWORD=MyPETS#001
+      - MSSQL_DB_AUDIT_LOG=events_service_audit_log
+    cap_add:
+      - SYS_PTRACE  
+    ports:
+      - "1433:1433"
+    volumes:
+      - .database/:/var/opt/mssql/data
+
+  web:
+    container_name: pets-senai
+    build: .
+    # command: dotnet run 
+    environment:
+      ASPNETCORE_HTTP_PORT: "https://+:7350"
+      ASPNETCORE_URLS: "http://+:7351"
+      ConnectionString: "Server=mssql,1433;Initial Catalog=vendas;User Id=SA;Password=MyPETS#001"
+    ports: 
+      - "7350:7350"
+      - "7351:7351"
+    # volumes:
+    #   - .:/app
+    #   - .:/source
+    # depends_on:
+    #   - mssql
+
+  
